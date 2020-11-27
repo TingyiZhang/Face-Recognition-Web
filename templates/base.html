@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/main.css') }}">
+    <title>Finding Faces</title>
+</head>
+<body>
+
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar bg-light">
+            <a class="navbar-brand" href="https://github.com/TingyiZhang">
+                <img src="{{url_for('static',filename='images/github.png')}}" alt="" width="30" height="30">
+            </a>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-item nav-link" href="{{ url_for('index') }}" style="color:gray">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="{{ url_for('gender') }}" style="color:gray">Demo</a>
+              </div>
+            </div>
+          </nav>
+    </div>
+
+    {% block bodyblock %}
+
+        
+
+    {% endblock %}
+
+
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container">
+            <p align="center">
+                <img src="{{url_for('static',filename='images/python_logo.png')}}" alt="" height="40" style="margin:0 20px">
+                <img src="{{url_for('static',filename='images/opencv.png')}}" alt="" height="40" style="margin:0 20px">
+                <img src="{{url_for('static',filename='images/numpy.png')}}" alt="" height="40" style="margin:0 20px">
+                <img src="{{url_for('static',filename='images/sklearn.png')}}" alt="" height="40" style="margin:0 20px">
+                <img src="{{url_for('static',filename='images/flask.png')}}" alt="" height="40" style="margin:0 20px">
+            </p>
+        </div>
+    </footer>
+    
+<style>
+    .footer{
+        position: fixed;
+        left:0;
+        bottom:0;
+        width: 100%;
+        background-color: transparent;
+        text-align: center;
+        padding: 10px 0;
+        font-family: monospace;
+    }
+</style>
+
+<!-- color codes -->
+<!-- dark blue #002f4d -->
+<!-- light blue #198b90 -->
+</body>
+</html>
+
