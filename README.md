@@ -1,6 +1,6 @@
-# Face-Recognition-Web
+# Machine-Learning-Web
 Still under development:
-- Web development
 - Image processing
+- Computer vision
 - Machine learning
 - and...more!!!
