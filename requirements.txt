@@ -7,3 +7,4 @@ sklearn
 opencv-python
 flask
 gunicorn
+Flask
