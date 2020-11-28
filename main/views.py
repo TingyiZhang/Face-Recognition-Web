@@ -2,7 +2,7 @@ from flask import render_template, request
 from flask import redirect, url_for
 import os
 from PIL import Image
-from app.utils import pipeline_model
+from main.utils import pipeline_model
 
 UPLOAD_FLODER = 'static/uploads'
 
