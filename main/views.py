@@ -25,18 +25,12 @@ def getwidth(path):
     return int(w)
 
 def gender():
-
     if request.method == "POST":
         f = request.files['image']
         filename=  f.filename
         path = os.path.join(UPLOAD_FLODER,filename)
         f.save(path)
         w = getwidth(path)
-        # prediction (pass to pipeline model)
         pipeline_model(path, filename, color='bgr')
-
-
         return render_template('gender.html',fileupload=True,img_name=filename, w=w)
-
-
     return render_template('gender.html',fileupload=False,img_name="freeai.png")
