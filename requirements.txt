@@ -6,3 +6,4 @@ jupyter
 sklearn
 opencv-python
 flask
+gunicorn

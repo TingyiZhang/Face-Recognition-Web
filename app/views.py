@@ -5,6 +5,7 @@ from PIL import Image
 from app.utils import pipeline_model
 
 UPLOAD_FLODER = 'static/uploads'
+
 def base():
     return render_template('base.html')
 
